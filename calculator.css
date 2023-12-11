@@ -1,0 +1,70 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for better layout */
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+body {
+    background-image:url('bgimg2.jpg'); /* Set a light background color for the body */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Add margin-top for better spacing */
+}
+
+.display {
+    width: 324px;
+    height: 45px; /* Adjust height for better appearance */
+    font-size: 16px; /* Increase font size for better visibility */
+}
+
+form {
+    margin-top:40px;
+    background-color: #fff; /* Set a white background for the form */
+    padding: 15px; /* Add padding for better spacing inside the form */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+form input {
+    width: 70px;
+    height: 50px;
+    margin: 5px; /* Add margin for better spacing between buttons */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for better visibility on buttons */
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.equal {
+    width: 156px;
+    background-color: #28a745;  
+    color: #fff;  
+    font-weight: bold; 
+}
+
+ 
+form input[value="+"],
+form input[value="-"],
+form input[value="*"],
+form input[value="/"] {
+    background-color: #007bff;  
+    color: #fff;  
+    font-weight: bold; 
+}
+
+/* Style the AC, DE, and . buttons with a different background color */
+form input[value="Ac"],
+form input[value="Del"],
+form input[value="."] {
+    background-color: #dc3545; /* Red for AC, DE, and . */
+    color: #fff; /* Set white text color for better contrast */
+    font-weight: bold; /* Add bold text for emphasis */
+}
